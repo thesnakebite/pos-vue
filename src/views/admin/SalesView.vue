@@ -4,6 +4,6 @@
 
 <template>
     <div class="min-h-screen flex justify-center items-center">
-        <h1 class=" text-4xl font-bold text-emerald-400">PRODUCTOS</h1>
+        <h1 class=" text-4xl font-bold text-emerald-400">VENTAS</h1>
     </div>
 </template>

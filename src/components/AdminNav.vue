@@ -1,6 +1,7 @@
 <script setup>
-    import Link from '@/components/Link.vue'
-    import Logo from '@/components/Logo.vue'
+    import { RouterLink } from 'vue-router'
+    import Link from './Link.vue'
+    import Logo from './Logo.vue'
 </script>
 
 <template>
@@ -11,6 +12,18 @@
         </div>
 
         <nav>
+            <RouterLink
+                :to="{name: 'products'}"
+                class="rounded p-2 font-bold text-white"
+            > 
+                Productos
+            </RouterLink>
+            <RouterLink
+                :to="{name: 'sales'}"
+                class="rounded p-2 font-bold text-white"
+            > 
+                Ventas
+            </RouterLink>
             <Link 
                 to="shop"
             >

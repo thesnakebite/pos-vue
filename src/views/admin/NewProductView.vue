@@ -1,15 +1,13 @@
 <script setup>
     import Link from '@/components/Link.vue'
-
 </script>
 
 <template>
-    <div>
+    <div class="">
         <Link 
-            to="new-product">
-                Nuevo producto
+            to="products">
+                Volver
         </Link>
-        <h1 class="text-4xl font-black my-10">Productos</h1>
-
+        <h1 class="text-4xl font-black my-10">Nuevo producto</h1>
     </div>
 </template>

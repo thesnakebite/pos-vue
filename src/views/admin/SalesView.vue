@@ -3,7 +3,7 @@
 </script>
 
 <template>
-    <div class="min-h-screen flex justify-center items-center">
-        <h1 class=" text-4xl font-bold text-emerald-400">VENTAS</h1>
+    <div>
+        <h1 class="text-4xl font-black my-10">Resumen de Ventas</h1>
     </div>
 </template>

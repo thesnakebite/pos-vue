@@ -5,7 +5,7 @@
 <template>
     <AdminNav />
 
-    <div>
+    <div class="container mt-32 mx-auto lg:min-h-screen">
 
         <RouterView />
     </div>

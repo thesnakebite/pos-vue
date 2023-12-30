@@ -9,5 +9,13 @@
                 Volver
         </Link>
         <h1 class="text-4xl font-black my-10">Nuevo producto</h1>
+
+        <FormKit
+            type="form"
+        
+        >
+
+
+        </FormKit>
     </div>
 </template>

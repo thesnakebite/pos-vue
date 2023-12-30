@@ -1,5 +1,12 @@
 <script setup>
     import Link from '@/components/Link.vue'
+
+    
+    const handleIconClick = (node, e) => {
+        node.props.suffixIcon = node.props.suffixIcon === 'eye' ? 'eyeClosed' : 'eye'
+        node.props.type = node.props.type === 'password' ? 'text' : 'password'
+    }
+
 </script>
 
 <template>
@@ -15,7 +22,6 @@
                 <FormKit
                     type="form"
                     submit-label="Agregar producto"
-                
                 >
                     <FormKit
                         type="text"
@@ -23,7 +29,7 @@
                         name="name"
                         placeholder="Nombre del producto"
                         validation="required"
-                        :validation-messages="{required: 'El nombre del producto es Obligatorio'}"
+                        :validation-messages="{required: 'El Nombre del producto es Obligatorio'}"
                     />
                     <FormKit
                         type="file"
@@ -31,7 +37,7 @@
                         name="image"
                         placeholder="Nombre del producto"
                         validation="required"
-                        :validation-messages="{required: 'La imagen del producto es Obligatorio'}"
+                        :validation-messages="{required: 'La Imagen del producto es Obligatorio'}"
                         accept="jpg, jpeg, png"
                         multiple="false"
                     />
@@ -40,7 +46,7 @@
                         label="Categoría"
                         name="category"
                         validation="required"
-                        :validation-messages="{required: 'La categoría es Obligatoria'}"
+                        :validation-messages="{required: 'La Categoría es Obligatoria'}"
                         :options="[
                             {value: '1', label: 'Categoría 1'},
                             {value: '2', label: 'Categoría 2'},
@@ -54,7 +60,7 @@
                         name="price"
                         placeholder="Precio del producto"
                         validation="required"
-                        :validation-messages="{required: 'El precio del producto es Obligatorio'}"
+                        :validation-messages="{required: 'El Precio del producto es Obligatorio'}"
                         min="1"
                     />
                     <FormKit
@@ -63,11 +69,9 @@
                         name="availability"
                         placeholder="Cantidad disponible"
                         validation="required"
-                        :validation-messages="{required: 'La cantidad es Obligatoria'}"
+                        :validation-messages="{required: 'La Cantidad es Obligatoria'}"
                         min="1"
                     />
-
-
                 </FormKit>
             </div>
         </div>
